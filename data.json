@@ -1,0 +1,4141 @@
+{
+  "stores": [
+    {
+      "id": "carrefour_hazmieh",
+      "name": "Carrefour Hazmieh",
+      "type": "Supermarket",
+      "distance": "2.1 km",
+      "maps": "Carrefour Hazmieh Lebanon"
+    },
+    {
+      "id": "spinneys_jnah",
+      "name": "Spinneys Jnah",
+      "type": "Supermarket",
+      "distance": "5.8 km",
+      "maps": "Spinneys Jnah Lebanon"
+    },
+    {
+      "id": "le_charcutier_dbayeh",
+      "name": "Le Charcutier Dbayeh",
+      "type": "Supermarket",
+      "distance": "9.6 km",
+      "maps": "Le Charcutier Dbayeh Lebanon"
+    },
+    {
+      "id": "coop_beirut",
+      "name": "Coop Beirut",
+      "type": "Supermarket",
+      "distance": "3.4 km",
+      "maps": "Coop Beirut Lebanon"
+    },
+    {
+      "id": "grabgo_achrafieh",
+      "name": "Grab & Go Achrafieh",
+      "type": "Convenience",
+      "distance": "1.4 km",
+      "maps": "Grab Go Achrafieh Lebanon"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "barcode": "8000500037560",
+      "name": "Nutella 750g",
+      "nameAr": "Nutella 750g",
+      "category": "Chocolate",
+      "size": "750g",
+      "imageLetter": "N",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 8.84,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 8.97,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 8.29,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 9.24,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 8.9,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "barcode": "5449000000996",
+      "name": "Coca-Cola 330ml",
+      "nameAr": "Coca-Cola 330ml",
+      "category": "Drinks",
+      "size": "330ml",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 0.85,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 0.84,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 0.85,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 0.75,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 0.77,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "barcode": "6291003123457",
+      "name": "Ariel 3kg",
+      "nameAr": "Ariel 3kg",
+      "category": "Cleaning",
+      "size": "3kg",
+      "imageLetter": "A",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 9.95,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 9.28,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 8.6,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 8.16,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 9.43,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "barcode": "5281000000011",
+      "name": "Pepsi 2.25L",
+      "nameAr": "Pepsi 2.25L",
+      "category": "Drinks",
+      "size": "2.25L",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.94,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.8,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.69,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.69,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.04,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "barcode": "6281007001001",
+      "name": "Puck Cream Cheese 500g",
+      "nameAr": "Puck Cream Cheese 500g",
+      "category": "Dairy",
+      "size": "500g",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.97,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 4.8,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 4.2,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 4.67,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 4.33,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "barcode": "5711953000105",
+      "name": "Lurpak Butter 200g",
+      "nameAr": "Lurpak Butter 200g",
+      "category": "Dairy",
+      "size": "200g",
+      "imageLetter": "L",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.8,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 4.06,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 4.35,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.9,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 4.57,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "barcode": "6291003123006",
+      "name": "Tide 4kg",
+      "nameAr": "Tide 4kg",
+      "category": "Cleaning",
+      "size": "4kg",
+      "imageLetter": "T",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 9.33,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 10.79,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 9.27,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 10.01,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 9.7,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "barcode": "7613035260005",
+      "name": "Nescafe Gold 200g",
+      "nameAr": "Nescafe Gold 200g",
+      "category": "Coffee",
+      "size": "200g",
+      "imageLetter": "N",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 8.75,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 7.8,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 7.95,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 8.58,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 9.0,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "barcode": "6221155001012",
+      "name": "Lipton Tea 100 Bags",
+      "nameAr": "Lipton Tea 100 Bags",
+      "category": "Tea",
+      "size": "",
+      "imageLetter": "L",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.42,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.4,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.55,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.61,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.75,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "barcode": "5285000110012",
+      "name": "Taanayel Milk 1L",
+      "nameAr": "Taanayel Milk 1L",
+      "category": "Dairy",
+      "size": "1L",
+      "imageLetter": "T",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.36,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.55,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.55,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.35,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.42,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "barcode": "5281000110029",
+      "name": "Bonjus Orange 1L",
+      "nameAr": "Bonjus Orange 1L",
+      "category": "Drinks",
+      "size": "1L",
+      "imageLetter": "B",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.06,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.18,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.1,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.1,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.24,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "barcode": "5283001000101",
+      "name": "Al Wadi Hummus 400g",
+      "nameAr": "Al Wadi Hummus 400g",
+      "category": "Canned",
+      "size": "400g",
+      "imageLetter": "A",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.42,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.25,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.36,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.36,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.42,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "barcode": "7613035123456",
+      "name": "Maggi Chicken Stock 24 Cubes",
+      "nameAr": "Maggi Chicken Stock 24 Cubes",
+      "category": "Canned",
+      "size": "",
+      "imageLetter": "M",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.33,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.11,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.44,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.03,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.15,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "barcode": "8715700111112",
+      "name": "Heinz Ketchup 500g",
+      "nameAr": "Heinz Ketchup 500g",
+      "category": "Sauces",
+      "size": "500g",
+      "imageLetter": "H",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.17,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.04,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.4,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.9,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.43,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "barcode": "8076809513753",
+      "name": "Barilla Spaghetti 500g",
+      "nameAr": "Barilla Spaghetti 500g",
+      "category": "Pasta",
+      "size": "500g",
+      "imageLetter": "B",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.27,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.06,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.95,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.86,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.41,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "barcode": "3038350001234",
+      "name": "Panzani Pasta 500g",
+      "nameAr": "Panzani Pasta 500g",
+      "category": "Pasta",
+      "size": "500g",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.92,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.75,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.82,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.89,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.01,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "barcode": "5285000200200",
+      "name": "Unica Chips 150g",
+      "nameAr": "Unica Chips 150g",
+      "category": "Snacks",
+      "size": "150g",
+      "imageLetter": "U",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.35,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.47,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.35,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.28,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.43,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "barcode": "5053990155357",
+      "name": "Pringles Original 165g",
+      "nameAr": "Pringles Original 165g",
+      "category": "Snacks",
+      "size": "165g",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.17,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.09,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.9,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.01,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.12,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "barcode": "8000500222220",
+      "name": "Kinder Bueno 43g",
+      "nameAr": "Kinder Bueno 43g",
+      "category": "Chocolate",
+      "size": "43g",
+      "imageLetter": "K",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.0,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 0.93,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 0.98,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 0.95,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 0.99,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "barcode": "6294001811111",
+      "name": "Galaxy Chocolate 40g",
+      "nameAr": "Galaxy Chocolate 40g",
+      "category": "Chocolate",
+      "size": "40g",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 0.67,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 0.67,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 0.75,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 0.7,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 0.87,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "barcode": "5285000333001",
+      "name": "Danone Yogurt 170g",
+      "nameAr": "Danone Yogurt 170g",
+      "category": "Dairy",
+      "size": "170g",
+      "imageLetter": "D",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 0.65,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 0.64,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 0.72,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 0.63,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 0.69,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "barcode": "5285000400001",
+      "name": "Labneh Baladna 450g",
+      "nameAr": "Labneh Baladna 450g",
+      "category": "Dairy",
+      "size": "450g",
+      "imageLetter": "L",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.1,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.16,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.96,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.05,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.32,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "barcode": "8001090123456",
+      "name": "Pampers Size 4",
+      "nameAr": "Pampers Size 4",
+      "category": "Baby",
+      "size": "4",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 13.3,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 11.82,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 12.68,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 12.66,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 12.5,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "barcode": "3574669900000",
+      "name": "Johnson Baby Shampoo 500ml",
+      "nameAr": "Johnson Baby Shampoo 500ml",
+      "category": "Baby",
+      "size": "500ml",
+      "imageLetter": "J",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 5.15,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 4.8,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 5.54,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 4.57,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 5.52,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "barcode": "6281006500001",
+      "name": "Dove Soap 4 Pack",
+      "nameAr": "Dove Soap 4 Pack",
+      "category": "Personal Care",
+      "size": "",
+      "imageLetter": "D",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.51,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.39,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.2,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.32,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.76,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "barcode": "8001841001111",
+      "name": "Head & Shoulders 400ml",
+      "nameAr": "Head & Shoulders 400ml",
+      "category": "Personal Care",
+      "size": "400ml",
+      "imageLetter": "H",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 5.21,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 5.6,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 5.4,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 5.83,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 6.05,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "barcode": "8714789001111",
+      "name": "Colgate Toothpaste 100ml",
+      "nameAr": "Colgate Toothpaste 100ml",
+      "category": "Personal Care",
+      "size": "100ml",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.13,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.9,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.12,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.09,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.34,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "barcode": "6221155002222",
+      "name": "Signal Toothpaste 120ml",
+      "nameAr": "Signal Toothpaste 120ml",
+      "category": "Personal Care",
+      "size": "120ml",
+      "imageLetter": "S",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.93,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.85,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.93,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.61,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.7,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "barcode": "8001090555555",
+      "name": "Fairy Dish Liquid 650ml",
+      "nameAr": "Fairy Dish Liquid 650ml",
+      "category": "Cleaning",
+      "size": "650ml",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.22,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.45,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.12,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.2,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.58,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "barcode": "6291100003333",
+      "name": "Dettol Antiseptic 500ml",
+      "nameAr": "Dettol Antiseptic 500ml",
+      "category": "Cleaning",
+      "size": "500ml",
+      "imageLetter": "D",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 4.55,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.84,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.85,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 4.06,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.9,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "barcode": "5285000777001",
+      "name": "Sanita Toilet Paper 10 Rolls",
+      "nameAr": "Sanita Toilet Paper 10 Rolls",
+      "category": "Household",
+      "size": "",
+      "imageLetter": "S",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 5.07,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 4.19,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 4.62,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 4.3,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 4.88,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "barcode": "6251001300001",
+      "name": "Kleenex Tissues 5 Pack",
+      "nameAr": "Kleenex Tissues 5 Pack",
+      "category": "Household",
+      "size": "",
+      "imageLetter": "K",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.5,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.84,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.51,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.95,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.77,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "barcode": "5285000888001",
+      "name": "Eggs 12 Pieces",
+      "nameAr": "Eggs 12 Pieces",
+      "category": "Fresh",
+      "size": "",
+      "imageLetter": "E",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.01,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.1,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.09,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.23,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.23,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "barcode": "5285000999001",
+      "name": "Banana 1kg",
+      "nameAr": "Banana 1kg",
+      "category": "Fresh",
+      "size": "1kg",
+      "imageLetter": "B",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.33,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.27,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.3,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.22,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.38,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "barcode": "5285000999002",
+      "name": "Apple Red 1kg",
+      "nameAr": "Apple Red 1kg",
+      "category": "Fresh",
+      "size": "1kg",
+      "imageLetter": "A",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.4,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.55,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.6,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.33,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.49,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "barcode": "5285000999003",
+      "name": "Tomato 1kg",
+      "nameAr": "Tomato 1kg",
+      "category": "Fresh",
+      "size": "1kg",
+      "imageLetter": "T",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.11,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.06,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.21,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.1,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.35,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "barcode": "5285000999004",
+      "name": "Potato 1kg",
+      "nameAr": "Potato 1kg",
+      "category": "Fresh",
+      "size": "1kg",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 0.95,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 0.99,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 0.89,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.04,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.17,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "barcode": "5285000555001",
+      "name": "Chicken Breast 1kg",
+      "nameAr": "Chicken Breast 1kg",
+      "category": "Meat",
+      "size": "1kg",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 6.52,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 6.61,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 6.5,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 6.54,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 7.12,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "barcode": "8004030001111",
+      "name": "Tuna Rio Mare 160g",
+      "nameAr": "Tuna Rio Mare 160g",
+      "category": "Canned",
+      "size": "160g",
+      "imageLetter": "T",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.3,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.26,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.14,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.48,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.38,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "barcode": "5283002000101",
+      "name": "Al Rabih Tahini 454g",
+      "nameAr": "Al Rabih Tahini 454g",
+      "category": "Canned",
+      "size": "454g",
+      "imageLetter": "A",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.6,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.79,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.91,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.06,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.18,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "barcode": "5286000000041",
+      "name": "Royal Chocolate Item 41",
+      "nameAr": "Royal Chocolate Item 41",
+      "category": "Chocolate",
+      "size": "41",
+      "imageLetter": "R",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 0.92,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 0.85,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 0.93,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 0.85,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.01,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "barcode": "5286000000042",
+      "name": "Cedars Chocolate Item 42",
+      "nameAr": "Cedars Chocolate Item 42",
+      "category": "Chocolate",
+      "size": "42",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.74,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.67,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.63,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.76,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.99,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "barcode": "5286000000043",
+      "name": "Golden Dairy Item 43",
+      "nameAr": "Golden Dairy Item 43",
+      "category": "Dairy",
+      "size": "43",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.66,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.66,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.33,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.81,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.49,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "barcode": "5286000000044",
+      "name": "Freshy Cleaning Item 44",
+      "nameAr": "Freshy Cleaning Item 44",
+      "category": "Cleaning",
+      "size": "44",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.79,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.68,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.74,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.7,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.96,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "barcode": "5286000000045",
+      "name": "Freshy Snacks Item 45",
+      "nameAr": "Freshy Snacks Item 45",
+      "category": "Snacks",
+      "size": "45",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.33,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.33,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.24,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.55,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.64,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "barcode": "5286000000046",
+      "name": "Golden Pasta Item 46",
+      "nameAr": "Golden Pasta Item 46",
+      "category": "Pasta",
+      "size": "46",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.38,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.28,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.4,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.25,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.57,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "barcode": "5286000000047",
+      "name": "Prime Drinks Item 47",
+      "nameAr": "Prime Drinks Item 47",
+      "category": "Drinks",
+      "size": "47",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.23,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.96,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.16,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.96,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.3,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "barcode": "5286000000048",
+      "name": "Good Dairy Item 48",
+      "nameAr": "Good Dairy Item 48",
+      "category": "Dairy",
+      "size": "48",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.33,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.75,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.62,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.63,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.84,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "barcode": "5286000000049",
+      "name": "Golden Fresh Item 49",
+      "nameAr": "Golden Fresh Item 49",
+      "category": "Fresh",
+      "size": "49",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.83,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.09,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.05,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.98,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.91,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "barcode": "5286000000050",
+      "name": "Family Drinks Item 50",
+      "nameAr": "Family Drinks Item 50",
+      "category": "Drinks",
+      "size": "50",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.69,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.69,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.77,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.72,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.91,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "barcode": "5286000000051",
+      "name": "Daily Fresh Item 51",
+      "nameAr": "Daily Fresh Item 51",
+      "category": "Fresh",
+      "size": "51",
+      "imageLetter": "D",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.79,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.77,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.66,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.9,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.23,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "barcode": "5286000000052",
+      "name": "Family Household Item 52",
+      "nameAr": "Family Household Item 52",
+      "category": "Household",
+      "size": "52",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 5.09,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 6.14,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 5.02,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 5.28,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 5.41,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "barcode": "5286000000053",
+      "name": "Prime Fresh Item 53",
+      "nameAr": "Prime Fresh Item 53",
+      "category": "Fresh",
+      "size": "53",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.82,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.58,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.39,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.61,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.78,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "barcode": "5286000000054",
+      "name": "Good Drinks Item 54",
+      "nameAr": "Good Drinks Item 54",
+      "category": "Drinks",
+      "size": "54",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.65,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.69,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.46,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.73,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.5,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "barcode": "5286000000055",
+      "name": "Royal Dairy Item 55",
+      "nameAr": "Royal Dairy Item 55",
+      "category": "Dairy",
+      "size": "55",
+      "imageLetter": "R",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.55,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.79,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.93,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.76,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.9,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "barcode": "5286000000056",
+      "name": "Golden Personal Care Item 56",
+      "nameAr": "Golden Personal Care Item 56",
+      "category": "Personal Care",
+      "size": "56",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 6.16,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 6.25,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 5.54,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 5.35,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 6.2,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "barcode": "5286000000057",
+      "name": "Good Drinks Item 57",
+      "nameAr": "Good Drinks Item 57",
+      "category": "Drinks",
+      "size": "57",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.24,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.32,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.18,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.11,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.18,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "barcode": "5286000000058",
+      "name": "Daily Personal Care Item 58",
+      "nameAr": "Daily Personal Care Item 58",
+      "category": "Personal Care",
+      "size": "58",
+      "imageLetter": "D",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 5.53,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 4.79,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 4.82,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 4.85,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 5.35,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "barcode": "5286000000059",
+      "name": "Daily Cleaning Item 59",
+      "nameAr": "Daily Cleaning Item 59",
+      "category": "Cleaning",
+      "size": "59",
+      "imageLetter": "D",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 4.33,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 4.89,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 5.0,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 4.36,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 4.56,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "barcode": "5286000000060",
+      "name": "Family Cleaning Item 60",
+      "nameAr": "Family Cleaning Item 60",
+      "category": "Cleaning",
+      "size": "60",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 4.4,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 4.42,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 4.55,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 4.45,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 4.8,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "barcode": "5286000000061",
+      "name": "Prime Dairy Item 61",
+      "nameAr": "Prime Dairy Item 61",
+      "category": "Dairy",
+      "size": "61",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.73,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.74,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.59,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.58,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 4.36,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "barcode": "5286000000062",
+      "name": "Freshy Canned Item 62",
+      "nameAr": "Freshy Canned Item 62",
+      "category": "Canned",
+      "size": "62",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.07,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.01,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.1,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.91,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.26,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "barcode": "5286000000063",
+      "name": "Cedars Dairy Item 63",
+      "nameAr": "Cedars Dairy Item 63",
+      "category": "Dairy",
+      "size": "63",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.99,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 4.46,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 4.26,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 4.04,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.92,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "barcode": "5286000000064",
+      "name": "Good Drinks Item 64",
+      "nameAr": "Good Drinks Item 64",
+      "category": "Drinks",
+      "size": "64",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.14,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.3,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.07,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.23,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.96,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "barcode": "5286000000065",
+      "name": "Classic Cleaning Item 65",
+      "nameAr": "Classic Cleaning Item 65",
+      "category": "Cleaning",
+      "size": "65",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 7.05,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 7.74,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 6.42,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 6.7,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 7.86,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "barcode": "5286000000066",
+      "name": "Family Personal Care Item 66",
+      "nameAr": "Family Personal Care Item 66",
+      "category": "Personal Care",
+      "size": "66",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.11,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.19,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.39,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.91,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.13,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "barcode": "5286000000067",
+      "name": "Freshy Personal Care Item 67",
+      "nameAr": "Freshy Personal Care Item 67",
+      "category": "Personal Care",
+      "size": "67",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 4.27,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.66,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 4.2,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.82,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 4.65,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "barcode": "5286000000068",
+      "name": "Classic Canned Item 68",
+      "nameAr": "Classic Canned Item 68",
+      "category": "Canned",
+      "size": "68",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.4,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.49,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.39,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.55,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.56,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "barcode": "5286000000069",
+      "name": "Prime Snacks Item 69",
+      "nameAr": "Prime Snacks Item 69",
+      "category": "Snacks",
+      "size": "69",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.23,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.29,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.18,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.28,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.49,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "barcode": "5286000000070",
+      "name": "Freshy Cleaning Item 70",
+      "nameAr": "Freshy Cleaning Item 70",
+      "category": "Cleaning",
+      "size": "70",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 4.0,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 4.15,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 4.82,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 4.29,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 4.4,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "barcode": "5286000000071",
+      "name": "Good Drinks Item 71",
+      "nameAr": "Good Drinks Item 71",
+      "category": "Drinks",
+      "size": "71",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.52,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.6,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.91,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.62,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.87,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "barcode": "5286000000072",
+      "name": "Family Pasta Item 72",
+      "nameAr": "Family Pasta Item 72",
+      "category": "Pasta",
+      "size": "72",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.75,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.68,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.62,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.89,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.8,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "barcode": "5286000000073",
+      "name": "Family Personal Care Item 73",
+      "nameAr": "Family Personal Care Item 73",
+      "category": "Personal Care",
+      "size": "73",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.82,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.14,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.65,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.76,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.3,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "barcode": "5286000000074",
+      "name": "Cedars Fresh Item 74",
+      "nameAr": "Cedars Fresh Item 74",
+      "category": "Fresh",
+      "size": "74",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.82,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.64,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.76,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.77,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.75,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "barcode": "5286000000075",
+      "name": "Good Canned Item 75",
+      "nameAr": "Good Canned Item 75",
+      "category": "Canned",
+      "size": "75",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.76,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.56,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.84,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.62,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.79,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "barcode": "5286000000076",
+      "name": "Daily Canned Item 76",
+      "nameAr": "Daily Canned Item 76",
+      "category": "Canned",
+      "size": "76",
+      "imageLetter": "D",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.91,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.22,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.21,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.24,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.48,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "barcode": "5286000000077",
+      "name": "Golden Personal Care Item 77",
+      "nameAr": "Golden Personal Care Item 77",
+      "category": "Personal Care",
+      "size": "77",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 4.67,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 5.18,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 4.79,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 4.75,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 4.9,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "barcode": "5286000000078",
+      "name": "Freshy Fresh Item 78",
+      "nameAr": "Freshy Fresh Item 78",
+      "category": "Fresh",
+      "size": "78",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.13,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.07,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.57,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.52,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.22,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "barcode": "5286000000079",
+      "name": "Family Fresh Item 79",
+      "nameAr": "Family Fresh Item 79",
+      "category": "Fresh",
+      "size": "79",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.16,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.91,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.01,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.18,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.14,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "barcode": "5286000000080",
+      "name": "Prime Fresh Item 80",
+      "nameAr": "Prime Fresh Item 80",
+      "category": "Fresh",
+      "size": "80",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.42,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.59,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.0,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.82,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.98,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "barcode": "5286000000081",
+      "name": "Royal Personal Care Item 81",
+      "nameAr": "Royal Personal Care Item 81",
+      "category": "Personal Care",
+      "size": "81",
+      "imageLetter": "R",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.61,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.7,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.73,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.78,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.3,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "barcode": "5286000000082",
+      "name": "Family Cleaning Item 82",
+      "nameAr": "Family Cleaning Item 82",
+      "category": "Cleaning",
+      "size": "82",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 9.72,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 8.72,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 9.89,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 9.43,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 10.69,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "barcode": "5286000000083",
+      "name": "Family Snacks Item 83",
+      "nameAr": "Family Snacks Item 83",
+      "category": "Snacks",
+      "size": "83",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.28,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.23,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.11,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.21,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.21,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "barcode": "5286000000084",
+      "name": "Family Canned Item 84",
+      "nameAr": "Family Canned Item 84",
+      "category": "Canned",
+      "size": "84",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.28,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.34,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.39,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.47,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.63,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "barcode": "5286000000085",
+      "name": "Prime Personal Care Item 85",
+      "nameAr": "Prime Personal Care Item 85",
+      "category": "Personal Care",
+      "size": "85",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.69,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.63,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.55,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.65,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.09,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "barcode": "5286000000086",
+      "name": "Prime Canned Item 86",
+      "nameAr": "Prime Canned Item 86",
+      "category": "Canned",
+      "size": "86",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.21,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.65,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.13,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.77,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.49,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "barcode": "5286000000087",
+      "name": "Golden Chocolate Item 87",
+      "nameAr": "Golden Chocolate Item 87",
+      "category": "Chocolate",
+      "size": "87",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.59,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.63,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.95,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.9,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.67,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "barcode": "5286000000088",
+      "name": "Royal Cleaning Item 88",
+      "nameAr": "Royal Cleaning Item 88",
+      "category": "Cleaning",
+      "size": "88",
+      "imageLetter": "R",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.66,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.55,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 4.02,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.68,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 4.51,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "barcode": "5286000000089",
+      "name": "Daily Pasta Item 89",
+      "nameAr": "Daily Pasta Item 89",
+      "category": "Pasta",
+      "size": "89",
+      "imageLetter": "D",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.0,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.97,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.27,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.91,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.38,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "barcode": "5286000000090",
+      "name": "Daily Canned Item 90",
+      "nameAr": "Daily Canned Item 90",
+      "category": "Canned",
+      "size": "90",
+      "imageLetter": "D",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.89,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.65,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.7,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.99,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.84,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "barcode": "5286000000091",
+      "name": "Golden Drinks Item 91",
+      "nameAr": "Golden Drinks Item 91",
+      "category": "Drinks",
+      "size": "91",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.95,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.15,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.88,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.99,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.21,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "barcode": "5286000000092",
+      "name": "City Fresh Item 92",
+      "nameAr": "City Fresh Item 92",
+      "category": "Fresh",
+      "size": "92",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.42,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.35,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.23,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.21,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.33,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "barcode": "5286000000093",
+      "name": "Royal Household Item 93",
+      "nameAr": "Royal Household Item 93",
+      "category": "Household",
+      "size": "93",
+      "imageLetter": "R",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 5.47,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 6.05,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 5.53,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 5.92,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 6.14,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "barcode": "5286000000094",
+      "name": "Daily Snacks Item 94",
+      "nameAr": "Daily Snacks Item 94",
+      "category": "Snacks",
+      "size": "94",
+      "imageLetter": "D",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.49,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.61,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.59,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.6,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.84,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "barcode": "5286000000095",
+      "name": "Royal Canned Item 95",
+      "nameAr": "Royal Canned Item 95",
+      "category": "Canned",
+      "size": "95",
+      "imageLetter": "R",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.11,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.38,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.01,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.12,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.5,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "barcode": "5286000000096",
+      "name": "Royal Dairy Item 96",
+      "nameAr": "Royal Dairy Item 96",
+      "category": "Dairy",
+      "size": "96",
+      "imageLetter": "R",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.49,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.38,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.47,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.34,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.05,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "barcode": "5286000000097",
+      "name": "Classic Pasta Item 97",
+      "nameAr": "Classic Pasta Item 97",
+      "category": "Pasta",
+      "size": "97",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 2.71,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.55,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.64,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.9,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 2.79,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "barcode": "5286000000098",
+      "name": "Classic Pasta Item 98",
+      "nameAr": "Classic Pasta Item 98",
+      "category": "Pasta",
+      "size": "98",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.95,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.98,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.83,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 2.09,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.86,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "barcode": "5286000000099",
+      "name": "Good Cleaning Item 99",
+      "nameAr": "Good Cleaning Item 99",
+      "category": "Cleaning",
+      "size": "99",
+      "imageLetter": "G",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 8.35,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 10.32,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 9.5,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 8.97,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 10.35,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "barcode": "5286000000100",
+      "name": "Prime Cleaning Item 100",
+      "nameAr": "Prime Cleaning Item 100",
+      "category": "Cleaning",
+      "size": "100",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 5.75,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 6.92,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 6.02,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 6.89,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 7.24,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    }
+  ]
+}
