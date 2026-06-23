@@ -4136,6 +4136,662 @@
           "source": "demo"
         }
       ]
+    },
+    {
+      "id": 101,
+      "barcode": "8806090001001",
+      "name": "Samsung Charger 25W",
+      "nameAr": "Samsung Charger 25W",
+      "category": "Electronics",
+      "size": "",
+      "imageLetter": "S",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 14.11,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 13.79,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 13.34,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 14.5,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 17.27,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "barcode": "0194253001002",
+      "name": "iPhone USB-C Cable 1m",
+      "nameAr": "iPhone USB-C Cable 1m",
+      "category": "Electronics",
+      "size": "",
+      "imageLetter": "I",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 21.63,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 21.25,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 18.0,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 16.94,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 17.8,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "barcode": "5099206001003",
+      "name": "Logitech Wireless Mouse",
+      "nameAr": "Logitech Wireless Mouse",
+      "category": "Electronics",
+      "size": "",
+      "imageLetter": "L",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 12.44,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 14.0,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 13.48,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 12.9,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 15.37,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "barcode": "3165140001004",
+      "name": "Bosch Drill Bit Set",
+      "nameAr": "Bosch Drill Bit Set",
+      "category": "Tools",
+      "size": "",
+      "imageLetter": "B",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 11.48,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 9.75,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 11.73,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 9.95,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 10.74,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "barcode": "3253560001005",
+      "name": "Stanley Tape Measure 5m",
+      "nameAr": "Stanley Tape Measure 5m",
+      "category": "Tools",
+      "size": "",
+      "imageLetter": "S",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 5.57,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 5.78,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 6.14,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 5.22,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 5.5,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "barcode": "8879610001006",
+      "name": "Hot Wheels Car",
+      "nameAr": "Hot Wheels Car",
+      "category": "Toys",
+      "size": "",
+      "imageLetter": "H",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.42,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.2,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.25,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.91,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.32,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "barcode": "5702010001007",
+      "name": "LEGO Mini Set",
+      "nameAr": "LEGO Mini Set",
+      "category": "Toys",
+      "size": "",
+      "imageLetter": "L",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 10.62,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 8.3,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 8.9,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 8.51,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 9.9,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "barcode": "4005800001008",
+      "name": "Nivea Cream 150ml",
+      "nameAr": "Nivea Cream 150ml",
+      "category": "Cosmetics",
+      "size": "",
+      "imageLetter": "N",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.47,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 3.4,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 3.37,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.32,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 4.1,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "barcode": "3600520001009",
+      "name": "L'Oreal Shampoo 400ml",
+      "nameAr": "L'Oreal Shampoo 400ml",
+      "category": "Cosmetics",
+      "size": "",
+      "imageLetter": "L",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 5.2,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 5.01,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 5.06,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 5.27,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 5.23,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "barcode": "5000158001010",
+      "name": "Panadol 24 Tablets",
+      "nameAr": "Panadol 24 Tablets",
+      "category": "Pharmacy",
+      "size": "",
+      "imageLetter": "P",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 3.03,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 2.8,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.91,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 3.22,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 3.24,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "barcode": "5287000001011",
+      "name": "Car Air Freshener",
+      "nameAr": "Car Air Freshener",
+      "category": "Auto",
+      "size": "",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.78,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.87,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 2.26,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.9,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.86,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "barcode": "5287000001012",
+      "name": "Motor Oil 1L",
+      "nameAr": "Motor Oil 1L",
+      "category": "Auto",
+      "size": "",
+      "imageLetter": "M",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 7.11,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 7.33,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 6.8,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 8.19,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 6.44,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "barcode": "5287000001013",
+      "name": "Cotton T-Shirt",
+      "nameAr": "Cotton T-Shirt",
+      "category": "Clothes",
+      "size": "",
+      "imageLetter": "C",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 8.37,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 7.5,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 7.2,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 8.15,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 7.16,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "barcode": "5287000001014",
+      "name": "LED Bulb 9W",
+      "nameAr": "LED Bulb 9W",
+      "category": "Home",
+      "size": "",
+      "imageLetter": "L",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 1.6,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 1.53,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 1.7,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 1.58,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 1.57,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "barcode": "5287000001015",
+      "name": "Football Size 5",
+      "nameAr": "Football Size 5",
+      "category": "Sports",
+      "size": "",
+      "imageLetter": "F",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 10.09,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 9.82,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 9.9,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 11.58,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 10.49,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "barcode": "5287000001016",
+      "name": "Dog Food 2kg",
+      "nameAr": "Dog Food 2kg",
+      "category": "Pet",
+      "size": "",
+      "imageLetter": "D",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 7.73,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 6.4,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 7.69,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 6.3,
+          "updated": "today",
+          "source": "demo"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 6.24,
+          "updated": "today",
+          "source": "demo"
+        }
+      ]
     }
   ]
 }
