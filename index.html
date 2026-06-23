@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>C.K Scan Lebanon V7</title>
+<title>C.K Scan Lebanon V8</title>
 <script src="https://unpkg.com/html5-qrcode"></script>
 <style>
 :root{--bg:#050505;--card:#111;--card2:#181818;--text:#f5f5f5;--muted:#a8a8a8;--gold:#d7a84f;--green:#00c076;--red:#ff5b5b;--line:#2a2a2a}
@@ -61,7 +61,7 @@ h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);
 
 <section class="screen" id="home">
 <div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1>C.K Scan</h1><p>Created by Charbel Khoury · 03 505 284</p></div></div><button class="lang" onclick="toggleLang()">AR/EN</button></div>
-<div class="lbBadge" data-en="Lebanon only · Carrefour · Spinneys · Le Charcutier · Coop · Grab & Go" data-ar="لبنان فقط · كارفور · سبينيس · لو شاركوتيه · كوب · غراب أند غو">Lebanon only · Carrefour · Spinneys · Le Charcutier · Coop · Grab & Go</div><div class="lbBadge">Version V7 Final Fix</div>
+<div class="lbBadge" data-en="Lebanon only · Carrefour · Spinneys · Le Charcutier · Coop · Grab & Go" data-ar="لبنان فقط · كارفور · سبينيس · لو شاركوتيه · كوب · غراب أند غو">Lebanon only · Carrefour · Spinneys · Le Charcutier · Coop · Grab & Go</div><div class="lbBadge">Version V8 Shopping List Fix</div>
 <input class="search" id="homeSearch" oninput="quickSearch()" onclick="go('search')" placeholder="Search product in Lebanon..."/>
 <div class="grid">
 <div class="tile" onclick="go('scanner')"><div class="icon">▦</div><h3 data-en="Scan Product" data-ar="مسح المنتج">Scan Product</h3><p data-en="Barcode scanner or manual code." data-ar="ماسح باركود أو إدخال يدوي.">Barcode scanner or manual code.</p></div>
@@ -92,6 +92,7 @@ h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);
 <div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Price Results" data-ar="نتائج الأسعار">Price Results</h1><p data-en="Lebanon stores" data-ar="متاجر لبنان">Lebanon stores</p></div></div><div><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
 <div class="product"><div class="productHead"><div class="prodImg" id="prodLetter">N</div><div><h3 id="prodName">Product</h3><p id="prodBarcode"></p><span class="badge" id="saveBadge"></span></div></div></div>
 <div id="stores"></div>
+<button class="btn gold" onclick="addCurrentToBasket()" data-en="Add to Shopping List" data-ar="أضف إلى لائحة التسوق">Add to Shopping List</button>
 <button class="btn green" onclick="go('map')" data-en="Navigate to Best Store" data-ar="اذهب إلى أرخص متجر">Navigate to Best Store</button>
 <button class="btn dark" onclick="go('report')" data-en="Report New Price in Lebanon" data-ar="أضف سعر جديد في لبنان">Report New Price in Lebanon</button>
 </section>
@@ -140,8 +141,8 @@ h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);
 </div></div>
 
 <script>
-let lang='en', db={stores:[],products:[]}, currentProduct=null, category='All', basket=[], basketStarted=false, html5QrCode=null;
-async function loadData(){try{const r=await fetch('data.json?v=7');db=await r.json()}catch(e){alert('Data file not loaded. Upload data.json beside index.html on GitHub.')}currentProduct=db.products[0];basket=db.products.slice(0,3).map(p=>p.id);buildUI();renderProduct();renderProducts();renderBasket();applyLang()}
+let lang='en', db={stores:[],products:[]}, currentProduct=null, category='All', basket={}, html5QrCode=null;
+async function loadData(){try{const r=await fetch('data.json?v=8');db=await r.json()}catch(e){alert('Data file not loaded. Upload data.json beside index.html on GitHub.')}currentProduct=db.products[0];db.products.slice(0,3).forEach(p=>basket[p.id]=1);buildUI();renderProduct();renderProducts();renderBasket();applyLang()}
 function money(v){return '$'+Number(v).toFixed(2)}
 function storeById(id){return db.stores.find(s=>s.id===id)||{}}
 function sortedPrices(p){return [...p.prices].sort((a,b)=>a.price-b.price)}
@@ -150,7 +151,7 @@ function highestPrice(p){return sortedPrices(p).at(-1)}
 function go(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));const map={home:0,scanner:1,search:2,list:3};if(map[id]!==undefined)document.querySelectorAll('.nav button')[map[id]].classList.add('active');if(id!=='scanner')stopScanner();if(id==='list')renderBasket();applyLang()}
 function toggleLang(){lang=lang==='en'?'ar':'en';applyLang()}
 function applyLang(){const app=document.getElementById('app');app.classList.toggle('rtl',lang==='ar');document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=el.getAttribute(lang==='en'?'data-en':'data-ar')})}
-function buildUI(){document.getElementById('countText').textContent=db.products.length+' products · Lebanon only';let cats=['All',...new Set(db.products.map(p=>p.category))];document.getElementById('chips').innerHTML=cats.map(c=>`<button class="chip ${c===category?'active':''}" onclick="setCat('${c}')">${c}</button>`).join('');document.getElementById('barcodeSamples').innerHTML=db.products.slice(0,8).map(p=>`<div class="listItem" onclick="useBarcode('${p.barcode}')"><div><strong>${p.name}</strong><span>${p.barcode}</span></div><b>${money(bestPrice(p).price)}</b></div>`).join('');document.getElementById('adminStatus').innerHTML=`<strong>C.K Scan Lebanon V7</strong><br>Created by Charbel Khoury<br>Phone: 03 505 284<br>Country: Lebanon only<br>Products: ${db.products.length}<br>Stores / branches: ${db.stores.length}<br>Sources: Demo + online placeholder + community reports<br>Real online sync: needs backend collector<br>Files: index.html + data.json`}
+function buildUI(){document.getElementById('countText').textContent=db.products.length+' products · Lebanon only';let cats=['All',...new Set(db.products.map(p=>p.category))];document.getElementById('chips').innerHTML=cats.map(c=>`<button class="chip ${c===category?'active':''}" onclick="setCat('${c}')">${c}</button>`).join('');document.getElementById('barcodeSamples').innerHTML=db.products.slice(0,8).map(p=>`<div class="listItem" onclick="useBarcode('${p.barcode}')"><div><strong>${p.name}</strong><span>${p.barcode}</span></div><b>${money(bestPrice(p).price)}</b></div>`).join('');document.getElementById('adminStatus').innerHTML=`<strong>C.K Scan Lebanon V8</strong><br>Created by Charbel Khoury<br>Phone: 03 505 284<br>Country: Lebanon only<br>Products: ${db.products.length}<br>Stores / branches: ${db.stores.length}<br>Sources: Demo + online placeholder + community reports<br>Real online sync: needs backend collector<br>Files: index.html + data.json`}
 function setCat(c){category=c;buildUI();renderProducts()}
 function renderProducts(){let q=(document.getElementById('searchInput')?.value||'').toLowerCase();let list=db.products.filter(p=>{let terms=(p.searchTerms||[]).join(' ').toLowerCase();return (category==='All'||p.category===category)&&(p.name.toLowerCase().includes(q)||p.barcode.includes(q)||p.category.toLowerCase().includes(q)||terms.includes(q));});document.getElementById('productList').innerHTML=list.slice(0,100).map(p=>`<div class="listItem" onclick="selectProduct(${p.id})"><div><strong>${p.name}</strong><span>${p.category} · ${p.barcode}</span></div><b>${money(bestPrice(p).price)}</b></div>`).join('')||'<p class="subtitle">No product found.</p>'}
 function selectProduct(id){currentProduct=db.products.find(p=>p.id===id);renderProduct();go('results')}
@@ -158,8 +159,53 @@ function renderProduct(){let p=currentProduct;if(!p)return;document.getElementBy
 function useBarcode(code){let p=db.products.find(x=>x.barcode===code);if(p){currentProduct=p;renderProduct();go('results')}else{document.getElementById('missingBarcode').textContent='Barcode: '+code;go('notfound')}}
 function manualBarcode(){let code=document.getElementById('barcodeInput').value.trim();useBarcode(code)}
 function openMaps(){if(currentProduct && currentProduct.ageRestricted){alert('No store navigation for age-restricted request-only products.');return}let best=bestPrice(currentProduct),s=storeById(best.storeId);window.open('https://www.google.com/maps/search/'+encodeURIComponent(s.maps),'_blank')}
-function renderBasket(){let items=basket.map(id=>db.products.find(p=>p.id===id)).filter(Boolean);document.getElementById('basketItems').innerHTML=items.length?items.map(p=>`<div class="listItem"><div><strong>${p.name}</strong><span>${p.category}</span></div><b>${money(bestPrice(p).price)}</b></div>`).join(''):'<p class="subtitle">Basket is empty.</p>';let bestTotal=items.reduce((a,p)=>a+bestPrice(p).price,0),highTotal=items.reduce((a,p)=>a+highestPrice(p).price,0);document.getElementById('basketTotal').textContent=money(bestTotal);document.getElementById('basketSaving').textContent='You save '+money(highTotal-bestTotal)+' compared to the highest basket.'}
-function clearBasket(){basket=[];document.getElementById('basketItems').innerHTML='<p class="subtitle">Basket is empty.</p>';document.getElementById('basketTotal').textContent='$0.00';document.getElementById('basketSaving').textContent='No products in basket.'}
+function addCurrentToBasket(){
+ if(!currentProduct || currentProduct.ageRestricted){alert('This product is request-only and cannot be added to basket.');return}
+ basket[currentProduct.id]=(basket[currentProduct.id]||0)+1;
+ renderBasket();
+ go('list');
+}
+function changeQty(id,delta){
+ if(!basket[id]) return;
+ basket[id]+=delta;
+ if(basket[id]<=0) delete basket[id];
+ renderBasket();
+}
+function removeFromBasket(id){
+ delete basket[id];
+ renderBasket();
+}
+function renderBasket(){
+ let ids=Object.keys(basket).map(Number);
+ let items=ids.map(id=>db.products.find(p=>p.id===id)).filter(Boolean);
+ if(!items.length){
+  document.getElementById('basketItems').innerHTML='<p class="subtitle">Basket is empty.</p>';
+  document.getElementById('basketTotal').textContent='$0.00';
+  document.getElementById('basketSaving').textContent='No products in basket.';
+  return;
+ }
+ document.getElementById('basketItems').innerHTML=items.map(p=>`
+  <div class="listItem">
+   <div>
+    <strong>${p.name}</strong>
+    <span>${p.category} · Best ${money(bestPrice(p).price)} · Qty ${basket[p.id]}</span>
+    <div style="margin-top:8px;display:flex;gap:6px;">
+     <button class="smallBtn" onclick="changeQty(${p.id},-1)">-</button>
+     <button class="smallBtn" onclick="changeQty(${p.id},1)">+</button>
+     <button class="smallBtn" onclick="removeFromBasket(${p.id})">Remove</button>
+    </div>
+   </div>
+   <b>${money(bestPrice(p).price*basket[p.id])}</b>
+  </div>`).join('');
+ let bestTotal=items.reduce((a,p)=>a+(bestPrice(p).price*basket[p.id]),0);
+ let highTotal=items.reduce((a,p)=>a+(highestPrice(p).price*basket[p.id]),0);
+ document.getElementById('basketTotal').textContent=money(bestTotal);
+ document.getElementById('basketSaving').textContent='You save '+money(highTotal-bestTotal)+' compared to the highest basket.';
+}
+function clearBasket(){
+ basket={};
+ renderBasket();
+}
 function quickSearch(){document.getElementById('searchInput').value=document.getElementById('homeSearch').value;renderProducts()}
 async function startScanner(){document.getElementById('fakeScan').style.display='none';document.getElementById('reader').style.display='block';if(!html5QrCode)html5QrCode=new Html5Qrcode("reader");try{await html5QrCode.start({facingMode:"environment"},{fps:10,qrbox:{width:230,height:160}},decoded=>{document.getElementById('barcodeInput').value=decoded;stopScanner();useBarcode(decoded)})}catch(e){alert('Camera is blocked. Allow camera permission in browser settings or use Chrome. Manual barcode still works.');document.getElementById('fakeScan').style.display='block';document.getElementById('reader').style.display='none'}}
 function stopScanner(){if(html5QrCode){html5QrCode.stop().catch(()=>{}).then(()=>{document.getElementById('fakeScan').style.display='block';document.getElementById('reader').style.display='none'})}}
