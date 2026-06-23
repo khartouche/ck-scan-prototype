@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>C.K Scan Lebanon V8</title>
+<title>C.K Scan Lebanon V9</title>
 <script src="https://unpkg.com/html5-qrcode"></script>
 <style>
 :root{--bg:#050505;--card:#111;--card2:#181818;--text:#f5f5f5;--muted:#a8a8a8;--gold:#d7a84f;--green:#00c076;--red:#ff5b5b;--line:#2a2a2a}
@@ -16,7 +16,7 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#000;color:var(-
 .brand{display:flex;align-items:center;gap:10px}.logo{width:44px;height:44px;border-radius:14px;border:1px solid rgba(215,168,79,.5);display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:800;background:#090909}
 .brand h1{font-size:18px;margin:0}.brand p{font-size:11px;color:var(--muted);margin:2px 0 0}
 .lang{border:1px solid var(--line);border-radius:999px;padding:8px 11px;color:var(--gold);background:#0d0d0d;font-size:12px;cursor:pointer}
-.mainMenu{border:1px solid rgba(215,168,79,.45);border-radius:999px;padding:8px 11px;color:#060606;background:var(--gold);font-size:12px;font-weight:800;cursor:pointer;margin-left:6px}
+.backBtn{border:1px solid var(--line);border-radius:999px;padding:8px 11px;color:#fff;background:#151515;font-size:12px;font-weight:800;cursor:pointer;margin-right:6px}.rtl .backBtn{margin-right:0;margin-left:6px}.mainMenu{border:1px solid rgba(215,168,79,.45);border-radius:999px;padding:8px 11px;color:#060606;background:var(--gold);font-size:12px;font-weight:800;cursor:pointer;margin-left:6px}
 .hero{padding:30px 0 20px;text-align:center}.biglogo{width:118px;height:118px;border-radius:34px;margin:0 auto 20px;border:1px solid rgba(215,168,79,.6);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:36px;font-weight:800;background:#101010;box-shadow:0 0 50px rgba(215,168,79,.10)}
 h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);font-size:14px;line-height:1.45;margin:0 0 18px}
 .lbBadge{display:inline-block;border:1px solid rgba(215,168,79,.5);color:var(--gold);border-radius:999px;padding:8px 12px;margin:8px 0 16px;font-size:12px}
@@ -24,7 +24,7 @@ h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);
 .search{width:100%;background:#101010;color:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;margin:0 0 12px;font-size:14px;outline:none}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.tile{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px 13px;min-height:110px;cursor:pointer}.tile .icon{font-size:25px;margin-bottom:12px}.tile h3{margin:0;font-size:15px}.tile p{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.35}
 .listItem{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px;margin:9px 0;gap:10px;cursor:pointer}.listItem span{color:var(--muted);font-size:12px;display:block;margin-top:4px}
-.product{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:15px;margin-bottom:12px}.productHead{display:flex;gap:13px;align-items:center}.prodImg{width:76px;height:76px;border-radius:20px;background:linear-gradient(145deg,#2b1d07,#d7a84f);display:flex;align-items:center;justify-content:center;color:#050505;font-weight:800;font-size:25px}
+.product{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:15px;margin-bottom:12px}.productHead{display:flex;gap:13px;align-items:center}.prodImg{width:76px;height:76px;border-radius:20px;background:linear-gradient(145deg,#2b1d07,#d7a84f);display:flex;align-items:center;justify-content:center;color:#050505;font-weight:800;font-size:25px;overflow:hidden}.prodImg img{width:100%;height:100%;object-fit:contain;background:#fff;padding:5px}
 .badge{display:inline-block;margin-top:9px;background:rgba(0,192,118,.12);border:1px solid rgba(0,192,118,.35);color:var(--green);border-radius:999px;padding:8px 11px;font-size:12px;font-weight:700}
 .store{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--card2);border:1px solid var(--line);border-radius:18px;padding:13px;margin:9px 0}.storeLogo{min-width:34px;width:34px;height:34px;border-radius:11px;background:#0b0b0b;border:1px solid rgba(215,168,79,.35);display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:800}
 .storeLeft{display:flex;align-items:center;gap:10px}.store strong{display:block;font-size:14px}.store small{display:block;color:var(--muted);font-size:12px;margin-top:4px}.price{text-align:right}.price b{font-size:18px}.price em{display:block;font-style:normal;color:var(--green);font-size:11px;margin-top:4px}
@@ -53,7 +53,7 @@ h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);
 </section>
 
 <section class="screen" id="login">
-<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1>C.K Scan</h1><p>Lebanon only</p></div></div><div><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
+<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1>C.K Scan</h1><p>Lebanon only</p></div></div><div><button class="backBtn" onclick="goBack()" data-en="Back" data-ar="رجوع">Back</button><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
 <h2 data-en="Welcome back" data-ar="أهلاً فيك">Welcome back</h2><p class="subtitle" data-en="Use demo mode now. Real login comes with the backend." data-ar="استعمل الديمو الآن. تسجيل الدخول الحقيقي يأتي مع الباك إند.">Use demo mode now. Real login comes with the backend.</p>
 <input class="search" placeholder="Email"/><input class="search" placeholder="Password" type="password"/>
 <button class="btn gold" onclick="go('home')" data-en="Sign In Demo" data-ar="دخول تجريبي">Sign In Demo</button><button class="btn dark" onclick="go('home')" data-en="Continue as Guest" data-ar="الدخول كزائر">Continue as Guest</button>
@@ -61,7 +61,7 @@ h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);
 
 <section class="screen" id="home">
 <div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1>C.K Scan</h1><p>Created by Charbel Khoury · 03 505 284</p></div></div><button class="lang" onclick="toggleLang()">AR/EN</button></div>
-<div class="lbBadge" data-en="Lebanon only · Carrefour · Spinneys · Le Charcutier · Coop · Grab & Go" data-ar="لبنان فقط · كارفور · سبينيس · لو شاركوتيه · كوب · غراب أند غو">Lebanon only · Carrefour · Spinneys · Le Charcutier · Coop · Grab & Go</div><div class="lbBadge">Version V8 Shopping List Fix</div>
+<div class="lbBadge" data-en="Lebanon only · Carrefour · Spinneys · Le Charcutier · Coop · Grab & Go" data-ar="لبنان فقط · كارفور · سبينيس · لو شاركوتيه · كوب · غراب أند غو">Lebanon only · Carrefour · Spinneys · Le Charcutier · Coop · Grab & Go</div><div class="lbBadge">Version V9 Images + Back</div>
 <input class="search" id="homeSearch" oninput="quickSearch()" onclick="go('search')" placeholder="Search product in Lebanon..."/>
 <div class="grid">
 <div class="tile" onclick="go('scanner')"><div class="icon">▦</div><h3 data-en="Scan Product" data-ar="مسح المنتج">Scan Product</h3><p data-en="Barcode scanner or manual code." data-ar="ماسح باركود أو إدخال يدوي.">Barcode scanner or manual code.</p></div>
@@ -72,7 +72,7 @@ h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);
 </section>
 
 <section class="screen" id="scanner">
-<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Barcode Scanner" data-ar="ماسح الباركود">Barcode Scanner</h1><p data-en="Lebanon prices" data-ar="أسعار لبنان">Lebanon prices</p></div></div><div><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
+<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Barcode Scanner" data-ar="ماسح الباركود">Barcode Scanner</h1><p data-en="Lebanon prices" data-ar="أسعار لبنان">Lebanon prices</p></div></div><div><button class="backBtn" onclick="goBack()" data-en="Back" data-ar="رجوع">Back</button><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
 <div class="scannerBox"><div id="reader" style="display:none"></div><div id="fakeScan"><div class="fakeBarcode"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div></div>
 <button class="btn gold" onclick="startScanner()" data-en="Start Camera Scan" data-ar="تشغيل الكاميرا">Start Camera Scan</button>
 <input class="search" id="barcodeInput" placeholder="Enter barcode manually"/>
@@ -82,14 +82,14 @@ h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);
 </section>
 
 <section class="screen" id="search">
-<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Lebanon Products" data-ar="منتجات لبنان">Lebanon Products</h1><p id="countText">Loading...</p></div></div><div><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
+<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Lebanon Products" data-ar="منتجات لبنان">Lebanon Products</h1><p id="countText">Loading...</p></div></div><div><button class="backBtn" onclick="goBack()" data-en="Back" data-ar="رجوع">Back</button><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
 <input class="search" id="searchInput" oninput="renderProducts()" placeholder="Search product, barcode, category..."/>
 <div class="chips" id="chips"></div>
 <div id="productList"></div>
 </section>
 
 <section class="screen" id="results">
-<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Price Results" data-ar="نتائج الأسعار">Price Results</h1><p data-en="Lebanon stores" data-ar="متاجر لبنان">Lebanon stores</p></div></div><div><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
+<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Price Results" data-ar="نتائج الأسعار">Price Results</h1><p data-en="Lebanon stores" data-ar="متاجر لبنان">Lebanon stores</p></div></div><div><button class="backBtn" onclick="goBack()" data-en="Back" data-ar="رجوع">Back</button><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
 <div class="product"><div class="productHead"><div class="prodImg" id="prodLetter">N</div><div><h3 id="prodName">Product</h3><p id="prodBarcode"></p><span class="badge" id="saveBadge"></span></div></div></div>
 <div id="stores"></div>
 <button class="btn gold" onclick="addCurrentToBasket()" data-en="Add to Shopping List" data-ar="أضف إلى لائحة التسوق">Add to Shopping List</button>
@@ -98,28 +98,28 @@ h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);
 </section>
 
 <section class="screen" id="map">
-<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Nearest Best Price" data-ar="أقرب سعر أفضل">Nearest Best Price</h1><p id="bestStoreName"></p></div></div><div><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
+<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Nearest Best Price" data-ar="أقرب سعر أفضل">Nearest Best Price</h1><p id="bestStoreName"></p></div></div><div><button class="backBtn" onclick="goBack()" data-en="Back" data-ar="رجوع">Back</button><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
 <div class="mapBox" data-en="Google Maps Lebanon preview" data-ar="معاينة خرائط لبنان">Google Maps Lebanon preview</div>
 <div class="product"><h3 id="mapStore"></h3><p id="mapText"></p></div>
 <button class="btn gold" onclick="openMaps()" data-en="Open Google Maps" data-ar="افتح خرائط غوغل">Open Google Maps</button>
 </section>
 
 <section class="screen" id="list">
-<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Shopping List" data-ar="لائحة التسوق">Shopping List</h1><p data-en="Compare full basket" data-ar="قارن السلة كاملة">Compare full basket</p></div></div><div><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
+<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Shopping List" data-ar="لائحة التسوق">Shopping List</h1><p data-en="Compare full basket" data-ar="قارن السلة كاملة">Compare full basket</p></div></div><div><button class="backBtn" onclick="goBack()" data-en="Back" data-ar="رجوع">Back</button><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
 <div id="basketItems"></div>
 <div class="product"><strong data-en="Best basket estimate" data-ar="تقدير أرخص سلة">Best basket estimate</strong><h2 id="basketTotal">$0.00</h2><p class="subtitle" id="basketSaving"></p></div>
 <button class="btn dark" onclick="clearBasket()" data-en="Clear Basket" data-ar="مسح السلة">Clear Basket</button>
 </section>
 
 <section class="screen" id="report">
-<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Community Price" data-ar="سعر من المستخدمين">Community Price</h1><p data-en="Help update Lebanon prices" data-ar="ساعد بتحديث أسعار لبنان">Help update Lebanon prices</p></div></div><div><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
+<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Community Price" data-ar="سعر من المستخدمين">Community Price</h1><p data-en="Help update Lebanon prices" data-ar="ساعد بتحديث أسعار لبنان">Help update Lebanon prices</p></div></div><div><button class="backBtn" onclick="goBack()" data-en="Back" data-ar="رجوع">Back</button><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
 <input class="search" id="reportProduct" placeholder="Product"/><input class="search" placeholder="Store / Branch in Lebanon"/><input class="search" placeholder="Price"/>
 <button class="btn dark" data-en="Upload Shelf Photo" data-ar="ارفع صورة السعر">Upload Shelf Photo</button><button class="btn gold" onclick="go('results')" data-en="Submit Demo Price" data-ar="إرسال سعر تجريبي">Submit Demo Price</button>
 </section>
 
 
 <section class="screen" id="notfound">
-<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Product Not Found" data-ar="المنتج غير موجود">Product Not Found</h1><p data-en="Lebanon database request" data-ar="طلب إضافة لقاعدة لبنان">Lebanon database request</p></div></div><div><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
+<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Product Not Found" data-ar="المنتج غير موجود">Product Not Found</h1><p data-en="Lebanon database request" data-ar="طلب إضافة لقاعدة لبنان">Lebanon database request</p></div></div><div><button class="backBtn" onclick="goBack()" data-en="Back" data-ar="رجوع">Back</button><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
 <div class="product">
 <h3 id="missingBarcode">Barcode</h3>
 <p class="subtitle" data-en="This barcode is not in the demo database yet. In the real app, this request goes to the admin panel." data-ar="هذا الباركود غير موجود بعد في قاعدة الديمو. في التطبيق الحقيقي، الطلب يذهب إلى لوحة الإدارة.">This barcode is not in the demo database yet. In the real app, this request goes to the admin panel.</p>
@@ -132,7 +132,7 @@ h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);
 </section>
 
 <section class="screen" id="admin">
-<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Data Status" data-ar="حالة البيانات">Data Status</h1><p data-en="Lebanon prototype" data-ar="نموذج لبنان">Lebanon prototype</p></div></div><div><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
+<div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Data Status" data-ar="حالة البيانات">Data Status</h1><p data-en="Lebanon prototype" data-ar="نموذج لبنان">Lebanon prototype</p></div></div><div><button class="backBtn" onclick="goBack()" data-en="Back" data-ar="رجوع">Back</button><button class="mainMenu" onclick="go('home')" data-en="Main Menu" data-ar="القائمة">Main Menu</button><button class="lang" onclick="toggleLang()">AR/EN</button></div></div>
 <div class="product" id="adminStatus"></div>
 <p class="subtitle danger" data-en="Demo prices only. Real prices need automatic collectors plus community reports." data-ar="الأسعار تجريبية فقط. الأسعار الحقيقية تحتاج جلب تلقائي ومساهمات المستخدمين.">Demo prices only. Real prices need automatic collectors plus community reports.</p>
 </section>
@@ -141,21 +141,36 @@ h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);
 </div></div>
 
 <script>
-let lang='en', db={stores:[],products:[]}, currentProduct=null, category='All', basket={}, html5QrCode=null;
-async function loadData(){try{const r=await fetch('data.json?v=8');db=await r.json()}catch(e){alert('Data file not loaded. Upload data.json beside index.html on GitHub.')}currentProduct=db.products[0];db.products.slice(0,3).forEach(p=>basket[p.id]=1);buildUI();renderProduct();renderProducts();renderBasket();applyLang()}
+let lang='en', db={stores:[],products:[]}, currentProduct=null, category='All', basket={}, html5QrCode=null, screenHistory=[];
+async function loadData(){try{const r=await fetch('data.json?v=9');db=await r.json()}catch(e){alert('Data file not loaded. Upload data.json beside index.html on GitHub.')}currentProduct=db.products[0];db.products.slice(0,3).forEach(p=>basket[p.id]=1);buildUI();renderProduct();renderProducts();renderBasket();applyLang()}
 function money(v){return '$'+Number(v).toFixed(2)}
 function storeById(id){return db.stores.find(s=>s.id===id)||{}}
 function sortedPrices(p){return [...p.prices].sort((a,b)=>a.price-b.price)}
 function bestPrice(p){return sortedPrices(p)[0]}
 function highestPrice(p){return sortedPrices(p).at(-1)}
-function go(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));const map={home:0,scanner:1,search:2,list:3};if(map[id]!==undefined)document.querySelectorAll('.nav button')[map[id]].classList.add('active');if(id!=='scanner')stopScanner();if(id==='list')renderBasket();applyLang()}
+function go(id, fromBack=false){
+ let active=document.querySelector('.screen.active');
+ if(active && active.id!==id && !fromBack){screenHistory.push(active.id)}
+ document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));
+ const map={home:0,scanner:1,search:2,list:3};
+ if(map[id]!==undefined)document.querySelectorAll('.nav button')[map[id]].classList.add('active');
+ if(id!=='scanner')stopScanner();
+ if(id==='list')renderBasket();
+ applyLang();
+}
+function goBack(){
+ let prev=screenHistory.pop();
+ if(prev){go(prev,true)}else{go('home',true)}
+}
 function toggleLang(){lang=lang==='en'?'ar':'en';applyLang()}
 function applyLang(){const app=document.getElementById('app');app.classList.toggle('rtl',lang==='ar');document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=el.getAttribute(lang==='en'?'data-en':'data-ar')})}
-function buildUI(){document.getElementById('countText').textContent=db.products.length+' products · Lebanon only';let cats=['All',...new Set(db.products.map(p=>p.category))];document.getElementById('chips').innerHTML=cats.map(c=>`<button class="chip ${c===category?'active':''}" onclick="setCat('${c}')">${c}</button>`).join('');document.getElementById('barcodeSamples').innerHTML=db.products.slice(0,8).map(p=>`<div class="listItem" onclick="useBarcode('${p.barcode}')"><div><strong>${p.name}</strong><span>${p.barcode}</span></div><b>${money(bestPrice(p).price)}</b></div>`).join('');document.getElementById('adminStatus').innerHTML=`<strong>C.K Scan Lebanon V8</strong><br>Created by Charbel Khoury<br>Phone: 03 505 284<br>Country: Lebanon only<br>Products: ${db.products.length}<br>Stores / branches: ${db.stores.length}<br>Sources: Demo + online placeholder + community reports<br>Real online sync: needs backend collector<br>Files: index.html + data.json`}
+function buildUI(){document.getElementById('countText').textContent=db.products.length+' products · Lebanon only';let cats=['All',...new Set(db.products.map(p=>p.category))];document.getElementById('chips').innerHTML=cats.map(c=>`<button class="chip ${c===category?'active':''}" onclick="setCat('${c}')">${c}</button>`).join('');document.getElementById('barcodeSamples').innerHTML=db.products.slice(0,8).map(p=>`<div class="listItem" onclick="useBarcode('${p.barcode}')"><div><strong>${p.name}</strong><span>${p.barcode}</span></div><b>${money(bestPrice(p).price)}</b></div>`).join('');document.getElementById('adminStatus').innerHTML=`<strong>C.K Scan Lebanon V9</strong><br>Created by Charbel Khoury<br>Phone: 03 505 284<br>Country: Lebanon only<br>Products: ${db.products.length}<br>Stores / branches: ${db.stores.length}<br>Sources: Demo + online placeholder + community reports<br>Real online sync: needs backend collector<br>Images: Open Food Facts by barcode when available<br>Files: index.html + data.json`}
 function setCat(c){category=c;buildUI();renderProducts()}
 function renderProducts(){let q=(document.getElementById('searchInput')?.value||'').toLowerCase();let list=db.products.filter(p=>{let terms=(p.searchTerms||[]).join(' ').toLowerCase();return (category==='All'||p.category===category)&&(p.name.toLowerCase().includes(q)||p.barcode.includes(q)||p.category.toLowerCase().includes(q)||terms.includes(q));});document.getElementById('productList').innerHTML=list.slice(0,100).map(p=>`<div class="listItem" onclick="selectProduct(${p.id})"><div><strong>${p.name}</strong><span>${p.category} · ${p.barcode}</span></div><b>${money(bestPrice(p).price)}</b></div>`).join('')||'<p class="subtitle">No product found.</p>'}
 function selectProduct(id){currentProduct=db.products.find(p=>p.id===id);renderProduct();go('results')}
-function renderProduct(){let p=currentProduct;if(!p)return;document.getElementById('prodName').textContent=p.name;document.getElementById('prodLetter').textContent=p.imageLetter;document.getElementById('prodBarcode').textContent='Barcode: '+p.barcode+(p.ageRestricted?' · 18+':'' );document.getElementById('reportProduct').value=p.name;let best=bestPrice(p), high=highestPrice(p), save=(high.price-best.price).toFixed(2), percent=Math.round(((high.price-best.price)/high.price)*100), bs=storeById(best.storeId);document.getElementById('saveBadge').textContent='Save $'+save+' · '+percent+'% at '+bs.name;if(p.ageRestricted){document.getElementById('stores').innerHTML='<div class="product"><h3>18+ Request Only</h3><p class="subtitle">This category is age-restricted. The prototype can record a request, but it does not show prices or route to stores.</p></div>';document.getElementById('saveBadge').textContent='18+ · request only';document.getElementById('bestStoreName').textContent='Request only';document.getElementById('mapStore').textContent='Request only';document.getElementById('mapText').textContent='No store navigation for this category.';return}document.getElementById('stores').innerHTML=sortedPrices(p).map((pr,i)=>{let s=storeById(pr.storeId);return `<div class="store"><div class="storeLeft"><div class="storeLogo">${s.logo}</div><div><strong>${s.name}</strong><small>${s.distance} · ${pr.updated} · ${pr.source}</small></div></div><div class="price"><b>${money(pr.price)}</b>${i===0?'<em>Best</em>':''}</div></div>`}).join('');document.getElementById('bestStoreName').textContent=bs.name;document.getElementById('mapStore').textContent=bs.name;document.getElementById('mapText').textContent='Best price for '+p.name+'. Distance '+bs.distance+'.'}
+function renderProduct(){let p=currentProduct;if(!p)return;document.getElementById('prodName').textContent=p.name;document.getElementById('prodLetter').textContent=p.imageLetter;updateProductImage(p);document.getElementById('prodBarcode').textContent='Barcode: '+p.barcode+(p.ageRestricted?' · 18+':'' );document.getElementById('reportProduct').value=p.name;let best=bestPrice(p), high=highestPrice(p), save=(high.price-best.price).toFixed(2), percent=Math.round(((high.price-best.price)/high.price)*100), bs=storeById(best.storeId);document.getElementById('saveBadge').textContent='Save $'+save+' · '+percent+'% at '+bs.name;if(p.ageRestricted){document.getElementById('stores').innerHTML='<div class="product"><h3>18+ Request Only</h3><p class="subtitle">This category is age-restricted. The prototype can record a request, but it does not show prices or route to stores.</p></div>';document.getElementById('saveBadge').textContent='18+ · request only';document.getElementById('bestStoreName').textContent='Request only';document.getElementById('mapStore').textContent='Request only';document.getElementById('mapText').textContent='No store navigation for this category.';return}document.getElementById('stores').innerHTML=sortedPrices(p).map((pr,i)=>{let s=storeById(pr.storeId);return `<div class="store"><div class="storeLeft"><div class="storeLogo">${s.logo}</div><div><strong>${s.name}</strong><small>${s.distance} · ${pr.updated} · ${pr.source}</small></div></div><div class="price"><b>${money(pr.price)}</b>${i===0?'<em>Best</em>':''}</div></div>`}).join('');document.getElementById('bestStoreName').textContent=bs.name;document.getElementById('mapStore').textContent=bs.name;document.getElementById('mapText').textContent='Best price for '+p.name+'. Distance '+bs.distance+'.'}
 function useBarcode(code){let p=db.products.find(x=>x.barcode===code);if(p){currentProduct=p;renderProduct();go('results')}else{document.getElementById('missingBarcode').textContent='Barcode: '+code;go('notfound')}}
 function manualBarcode(){let code=document.getElementById('barcodeInput').value.trim();useBarcode(code)}
 function openMaps(){if(currentProduct && currentProduct.ageRestricted){alert('No store navigation for age-restricted request-only products.');return}let best=bestPrice(currentProduct),s=storeById(best.storeId);window.open('https://www.google.com/maps/search/'+encodeURIComponent(s.maps),'_blank')}
@@ -209,6 +224,30 @@ function clearBasket(){
 function quickSearch(){document.getElementById('searchInput').value=document.getElementById('homeSearch').value;renderProducts()}
 async function startScanner(){document.getElementById('fakeScan').style.display='none';document.getElementById('reader').style.display='block';if(!html5QrCode)html5QrCode=new Html5Qrcode("reader");try{await html5QrCode.start({facingMode:"environment"},{fps:10,qrbox:{width:230,height:160}},decoded=>{document.getElementById('barcodeInput').value=decoded;stopScanner();useBarcode(decoded)})}catch(e){alert('Camera is blocked. Allow camera permission in browser settings or use Chrome. Manual barcode still works.');document.getElementById('fakeScan').style.display='block';document.getElementById('reader').style.display='none'}}
 function stopScanner(){if(html5QrCode){html5QrCode.stop().catch(()=>{}).then(()=>{document.getElementById('fakeScan').style.display='block';document.getElementById('reader').style.display='none'})}}
+
+async function fetchProductImage(p){
+ if(!p || p.ageRestricted) return '';
+ if(p.cachedImage) return p.cachedImage;
+ try{
+  const r=await fetch('https://world.openfoodfacts.org/api/v2/product/'+encodeURIComponent(p.barcode)+'.json?fields=image_front_url,image_url,product_name');
+  const j=await r.json();
+  const img=(j.product && (j.product.image_front_url || j.product.image_url)) || '';
+  p.cachedImage=img;
+  return img;
+ }catch(e){
+  p.cachedImage='';
+  return '';
+ }
+}
+async function updateProductImage(p){
+ const box=document.getElementById('prodLetter');
+ box.textContent=p.imageLetter || 'C.K';
+ const img=await fetchProductImage(p);
+ if(img && currentProduct && currentProduct.id===p.id){
+  box.innerHTML='<img src="'+img+'" alt="'+p.name+'" onerror="this.parentElement.textContent=\''+(p.imageLetter||'C.K')+'\'">';
+ }
+}
+
 loadData();
 </script>
 </body>
