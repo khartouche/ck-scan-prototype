@@ -8192,7 +8192,7 @@
     {
       "id": 141,
       "barcode": "5289000000001",
-      "name": "Age Restricted Product Example",
+      "name": "Age Restricted Product 18+",
       "nameAr": "منتج مقيّد بالعمر",
       "category": "Age Restricted",
       "imageLetter": "18+",
@@ -8246,7 +8246,16 @@
           "source": "age-restricted placeholder"
         }
       ],
-      "ageRestricted": true
+      "ageRestricted": true,
+      "searchTerms": [
+        "whisky",
+        "whiskey",
+        "wine",
+        "beer",
+        "arak",
+        "alcohol",
+        "18+"
+      ]
     }
   ]
 }
