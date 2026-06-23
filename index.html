@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C.K Scan Prototype V2</title>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <style>
+    :root{
+      --bg:#050505;--card:#111;--card2:#181818;--text:#f5f5f5;--muted:#a8a8a8;
+      --gold:#d7a84f;--green:#00c076;--red:#ff5b5b;--line:#2a2a2a;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at top,#1b1b1b 0,#050505 45%,#000 100%);color:var(--text);min-height:100vh}
+    .wrap{max-width:430px;margin:0 auto;min-height:100vh;padding:18px}
+    .phone{min-height:calc(100vh - 36px);border:1px solid #2d2d2d;border-radius:34px;overflow:hidden;background:linear-gradient(180deg,#0b0b0b,#050505);box-shadow:0 24px 80px rgba(0,0,0,.55);position:relative}
+    .screen{display:none;padding:24px 20px 92px}.screen.active{display:block}
+    .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+    .brand{display:flex;align-items:center;gap:10px}.logo{width:44px;height:44px;border-radius:14px;border:1px solid rgba(215,168,79,.5);display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:700;background:linear-gradient(145deg,#111,#050505)}
+    .brand h1{font-size:18px;margin:0}.brand p{font-size:11px;color:var(--muted);margin:2px 0 0}
+    .lang{border:1px solid var(--line);border-radius:999px;padding:8px 11px;color:var(--gold);background:#0d0d0d;font-size:12px;cursor:pointer}
+    .hero{padding:34px 0 24px;text-align:center}.biglogo{width:118px;height:118px;border-radius:34px;margin:0 auto 22px;border:1px solid rgba(215,168,79,.6);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:36px;font-weight:800;background:linear-gradient(145deg,#161616,#050505);box-shadow:0 0 50px rgba(215,168,79,.12)}
+    h2{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{color:var(--muted);font-size:14px;line-height:1.45;margin:0 0 24px}
+    .btn{width:100%;border:0;border-radius:16px;padding:16px 18px;font-size:15px;font-weight:700;cursor:pointer;margin:8px 0}.btn.gold{background:var(--gold);color:#060606}.btn.dark{background:#151515;color:#fff;border:1px solid var(--line)}.btn.green{background:var(--green);color:#03130c}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.tile{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 14px;min-height:118px;cursor:pointer}.tile .icon{font-size:28px;margin-bottom:14px}.tile h3{margin:0;font-size:16px}.tile p{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.35}
+    .search{width:100%;background:#101010;color:#fff;border:1px solid var(--line);border-radius:16px;padding:15px;margin:0 0 14px;font-size:14px;outline:none}
+    .scannerBox{min-height:285px;border:1px solid rgba(215,168,79,.45);border-radius:24px;background:radial-gradient(circle,#1e1e1e,#080808);display:flex;align-items:center;justify-content:center;margin:16px 0;position:relative;overflow:hidden}
+    #reader{width:100%;min-height:285px}
+    .fakeBarcode{display:flex;gap:4px;align-items:end;height:92px}.fakeBarcode span{display:block;width:5px;background:#eee;border-radius:2px}.fakeBarcode span:nth-child(odd){height:88px}.fakeBarcode span:nth-child(even){height:54px}
+    .example{background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:12px;margin:8px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center}.example small{color:var(--muted)}
+    .product{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:16px;margin-bottom:14px}.productHead{display:flex;gap:14px;align-items:center}.prodImg{width:72px;height:72px;border-radius:18px;background:linear-gradient(145deg,#2b1d07,#d7a84f);display:flex;align-items:center;justify-content:center;color:#050505;font-weight:800}
+    .product h3{margin:0;font-size:20px}.product p{margin:5px 0;color:var(--muted);font-size:13px}.badge{display:inline-block;margin-top:10px;background:rgba(0,192,118,.12);border:1px solid rgba(0,192,118,.35);color:var(--green);border-radius:999px;padding:8px 11px;font-size:12px;font-weight:700}
+    .store{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--card2);border:1px solid var(--line);border-radius:18px;padding:14px;margin:10px 0}.store strong{display:block;font-size:14px}.store small{display:block;color:var(--muted);font-size:12px;margin-top:4px}.price{text-align:right}.price b{font-size:18px;color:#fff}.price em{display:block;font-style:normal;color:var(--green);font-size:11px;margin-top:4px}
+    .nav{position:absolute;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(4,1fr);background:rgba(12,12,12,.96);border-top:1px solid var(--line);padding:9px 10px 14px}.nav button{background:none;border:0;color:var(--muted);font-size:11px;cursor:pointer;padding:6px 0}.nav button.active{color:var(--gold)}
+    .listItem{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin:10px 0}.listItem span{color:var(--muted);font-size:12px}
+    .mapBox{height:150px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(135deg,transparent 0 40%,rgba(215,168,79,.25) 40% 43%,transparent 43%),#111;display:flex;align-items:center;justify-content:center;color:var(--muted);margin:14px 0}
+    .created{position:absolute;left:0;right:0;bottom:20px;text-align:center;color:#777;font-size:12px}.rtl{direction:rtl;text-align:right}
+    .rtl .topbar,.rtl .brand,.rtl .productHead,.rtl .store,.rtl .listItem{direction:rtl}
+  </style>
+</head>
+<body>
+<div class="wrap"><div class="phone" id="app">
+
+<section class="screen active" id="splash">
+  <div class="hero"><div class="biglogo">C.K</div><h2 data-en="C.K Scan" data-ar="سي كاي سكان">C.K Scan</h2><p class="subtitle" data-en="Buy For Less" data-ar="اشتري بسعر أقل">Buy For Less</p>
+  <button class="btn gold" onclick="go('login')" data-en="Get Started" data-ar="ابدأ الآن">Get Started</button>
+  <button class="btn dark" onclick="toggleLang()" data-en="العربية" data-ar="English">العربية</button></div>
+  <div class="created">Created by Charbel Khoury</div>
+</section>
+
+<section class="screen" id="login">
+  <div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1>C.K Scan</h1><p>Buy For Less</p></div></div><button class="lang" onclick="toggleLang()">AR/EN</button></div>
+  <h2 data-en="Welcome back" data-ar="أهلاً فيك">Welcome back</h2>
+  <p class="subtitle" data-en="Sign in to save lists, alerts, and favorite stores." data-ar="سجّل دخولك لتحفظ اللوائح والتنبيهات والمتاجر المفضلة.">Sign in to save lists, alerts, and favorite stores.</p>
+  <input class="search" placeholder="Email"/><input class="search" placeholder="Password" type="password"/>
+  <button class="btn gold" onclick="go('home')" data-en="Sign In" data-ar="تسجيل الدخول">Sign In</button>
+  <button class="btn dark" onclick="go('home')" data-en="Continue as Guest" data-ar="الدخول كزائر">Continue as Guest</button>
+</section>
+
+<section class="screen" id="home">
+  <div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1>C.K Scan</h1><p>Buy For Less</p></div></div><button class="lang" onclick="toggleLang()">AR/EN</button></div>
+  <input class="search" onclick="go('search')" placeholder="Search Nutella, Pepsi, Milk..." />
+  <div class="grid">
+    <div class="tile" onclick="go('scanner')"><div class="icon">▦</div><h3 data-en="Scan Product" data-ar="مسح المنتج">Scan Product</h3><p data-en="Barcode scanner or manual code." data-ar="ماسح باركود أو إدخال يدوي.">Barcode scanner or manual code.</p></div>
+    <div class="tile" onclick="go('results')"><div class="icon">⌕</div><h3 data-en="Best Deals" data-ar="أفضل العروض">Best Deals</h3><p data-en="See lowest prices nearby." data-ar="شوف أرخص الأسعار حولك.">See lowest prices nearby.</p></div>
+    <div class="tile" onclick="go('list')"><div class="icon">☑</div><h3 data-en="Shopping List" data-ar="لائحة التسوق">Shopping List</h3><p data-en="Know where your basket costs less." data-ar="اعرف وين سلتك أرخص.">Know where your basket costs less.</p></div>
+    <div class="tile" onclick="go('alerts')"><div class="icon">◉</div><h3 data-en="Price Alerts" data-ar="تنبيهات السعر">Price Alerts</h3><p data-en="Get notified when prices drop." data-ar="وصلك تنبيه عند نزول السعر.">Get notified when prices drop.</p></div>
+  </div>
+</section>
+
+<section class="screen" id="scanner">
+  <div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Barcode Scanner" data-ar="ماسح الباركود">Barcode Scanner</h1><p data-en="Camera or manual test" data-ar="كاميرا أو تجربة يدوية">Camera or manual test</p></div></div><button class="lang" onclick="toggleLang()">AR/EN</button></div>
+  <div class="scannerBox" id="scannerBox">
+    <div id="reader" style="display:none"></div>
+    <div id="fakeScan"><div class="fakeBarcode"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+  </div>
+  <button class="btn gold" onclick="startScanner()" data-en="Start Camera Scan" data-ar="تشغيل الكاميرا">Start Camera Scan</button>
+  <input class="search" id="barcodeInput" placeholder="Enter barcode manually: 8000500037560"/>
+  <button class="btn dark" onclick="manualBarcode()" data-en="Search Barcode" data-ar="بحث بالباركود">Search Barcode</button>
+  <p class="subtitle" data-en="Try one of these demo barcodes:" data-ar="جرّب واحد من هذه الباركودات:">Try one of these demo barcodes:</p>
+  <div class="example" onclick="useBarcode('8000500037560')"><strong>Nutella 750g</strong><small>8000500037560</small></div>
+  <div class="example" onclick="useBarcode('5449000000996')"><strong>Coca-Cola 330ml</strong><small>5449000000996</small></div>
+  <div class="example" onclick="useBarcode('6291003123457')"><strong>Ariel 3kg</strong><small>6291003123457</small></div>
+</section>
+
+<section class="screen" id="results">
+  <div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Price Results" data-ar="نتائج الأسعار">Price Results</h1><p data-en="Lebanon stores" data-ar="متاجر لبنان">Lebanon stores</p></div></div><button class="lang" onclick="toggleLang()">AR/EN</button></div>
+  <div class="product"><div class="productHead"><div class="prodImg" id="prodLetter">N</div><div><h3 id="prodName">Nutella 750g</h3><p id="prodBarcode">Barcode: 8000500037560</p><span class="badge" id="saveBadge">Save $0.50 at Carrefour</span></div></div></div>
+  <div id="stores"></div>
+  <button class="btn green" onclick="go('map')" data-en="Navigate to Best Store" data-ar="اذهب إلى أرخص متجر">Navigate to Best Store</button>
+  <button class="btn dark" onclick="go('report')" data-en="Report New Price" data-ar="أضف سعر جديد">Report New Price</button>
+</section>
+
+<section class="screen" id="map">
+  <div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Nearest Best Price" data-ar="أقرب سعر أفضل">Nearest Best Price</h1><p id="bestStoreName">Carrefour Hazmieh</p></div></div><button class="lang" onclick="toggleLang()">AR/EN</button></div>
+  <div class="mapBox" data-en="Google Maps preview" data-ar="معاينة خرائط غوغل">Google Maps preview</div>
+  <div class="product"><h3 id="mapStore">Carrefour Hazmieh</h3><p id="mapText">Best price. Distance 2.1 km.</p></div>
+  <button class="btn gold" onclick="openMaps()" data-en="Open Google Maps" data-ar="افتح خرائط غوغل">Open Google Maps</button>
+</section>
+
+<section class="screen" id="list">
+  <div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Shopping List" data-ar="لائحة التسوق">Shopping List</h1><p data-en="Compare full basket" data-ar="قارن السلة كاملة">Compare full basket</p></div></div><button class="lang" onclick="toggleLang()">AR/EN</button></div>
+  <div class="listItem"><div><strong>Nutella 750g</strong><span>Best $8.90</span></div><b>1</b></div>
+  <div class="listItem"><div><strong>Pepsi 2.25L</strong><span>Best $1.80</span></div><b>2</b></div>
+  <div class="listItem"><div><strong>Milk 1L</strong><span>Best $1.35</span></div><b>3</b></div>
+  <div class="product"><strong>Best basket</strong><h2>$16.55</h2><p class="subtitle">You save $2.70 compared to the highest basket.</p></div>
+</section>
+
+<section class="screen" id="alerts">
+  <div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Notifications" data-ar="التنبيهات">Notifications</h1><p data-en="Price drops" data-ar="نزول الأسعار">Price drops</p></div></div><button class="lang" onclick="toggleLang()">AR/EN</button></div>
+  <div class="listItem"><div><strong>Nutella 750g</strong><span>Notify under $8.50</span></div><b>ON</b></div>
+  <div class="listItem"><div><strong>Ariel 3kg</strong><span>Price dropped 6%</span></div><b style="color:var(--green)">NEW</b></div>
+</section>
+
+<section class="screen" id="report">
+  <div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Community Price" data-ar="سعر من المستخدمين">Community Price</h1><p data-en="Help update Lebanon prices" data-ar="ساعد بتحديث أسعار لبنان">Help update Lebanon prices</p></div></div><button class="lang" onclick="toggleLang()">AR/EN</button></div>
+  <input class="search" id="reportProduct" value="Nutella 750g"/><input class="search" value="Grab & Go Achrafieh"/><input class="search" value="$9.10"/>
+  <button class="btn dark" data-en="Upload Shelf Photo" data-ar="ارفع صورة السعر">Upload Shelf Photo</button>
+  <button class="btn gold" onclick="go('results')" data-en="Submit Price" data-ar="إرسال السعر">Submit Price</button>
+</section>
+
+<section class="screen" id="search">
+  <div class="topbar"><div class="brand"><div class="logo">C.K</div><div><h1 data-en="Search" data-ar="بحث">Search</h1><p data-en="Find product manually" data-ar="ابحث عن منتج">Find product manually</p></div></div><button class="lang" onclick="toggleLang()">AR/EN</button></div>
+  <input class="search" value="Nutella"/>
+  <div class="listItem" onclick="useBarcode('8000500037560')"><div><strong>Nutella 750g</strong><span>4 stores found</span></div><b>$8.90</b></div>
+  <div class="listItem" onclick="useBarcode('5449000000996')"><div><strong>Coca-Cola 330ml</strong><span>4 stores found</span></div><b>$0.75</b></div>
+</section>
+
+<div class="nav"><button onclick="go('home')" class="active">Home</button><button onclick="go('scanner')">Scan</button><button onclick="go('list')">List</button><button onclick="go('alerts')">Alerts</button></div>
+</div></div>
+
+<script>
+let lang='en';
+let currentProduct='8000500037560';
+let html5QrCode=null;
+
+const products={
+ '8000500037560':{name:'Nutella 750g',letter:'N',save:'Save $0.50 at Carrefour',stores:[
+  ['Carrefour Hazmieh','2.1 km · Updated today','$8.90','Best'],
+  ['Grab & Go Achrafieh','1.4 km · User verified','$9.10',''],
+  ['Spinneys Jnah','5.8 km · Updated today','$9.25',''],
+  ['Le Charcutier Dbayeh','9.6 km · Community price','$9.40','']
+ ]},
+ '5449000000996':{name:'Coca-Cola 330ml',letter:'C',save:'Save $0.20 at Spinneys',stores:[
+  ['Spinneys Jnah','5.8 km · Updated today','$0.75','Best'],
+  ['Carrefour Hazmieh','2.1 km · Updated today','$0.82',''],
+  ['Coop Beirut','3.4 km · Community price','$0.90',''],
+  ['Grab & Go Achrafieh','1.4 km · User verified','$0.95','']
+ ]},
+ '6291003123457':{name:'Ariel 3kg',letter:'A',save:'Save $1.35 at Carrefour',stores:[
+  ['Carrefour Hazmieh','2.1 km · Updated today','$8.60','Best'],
+  ['Spinneys Jnah','5.8 km · Updated today','$9.20',''],
+  ['Le Charcutier Dbayeh','9.6 km · Community price','$9.50',''],
+  ['Coop Beirut','3.4 km · Community price','$9.95','']
+ ]}
+};
+
+function go(id){
+ document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));
+ const map={home:0,scanner:1,list:2,alerts:3};
+ if(map[id]!==undefined) document.querySelectorAll('.nav button')[map[id]].classList.add('active');
+ if(id!=='scanner') stopScanner();
+ applyLang();
+}
+function toggleLang(){lang=lang==='en'?'ar':'en';applyLang()}
+function applyLang(){
+ const app=document.getElementById('app');
+ app.classList.toggle('rtl',lang==='ar');
+ document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=el.getAttribute(lang==='en'?'data-en':'data-ar')});
+}
+function useBarcode(code){
+ currentProduct=code;
+ renderProduct();
+ go('results');
+}
+function manualBarcode(){
+ const code=document.getElementById('barcodeInput').value.trim();
+ if(products[code]) useBarcode(code);
+ else alert('Barcode not found in demo database. Try 8000500037560');
+}
+function renderProduct(){
+ const p=products[currentProduct] || products['8000500037560'];
+ document.getElementById('prodName').textContent=p.name;
+ document.getElementById('prodLetter').textContent=p.letter;
+ document.getElementById('prodBarcode').textContent='Barcode: '+currentProduct;
+ document.getElementById('saveBadge').textContent=p.save;
+ document.getElementById('reportProduct').value=p.name;
+ const stores=document.getElementById('stores');
+ stores.innerHTML='';
+ p.stores.forEach(s=>{
+  const div=document.createElement('div');
+  div.className='store';
+  div.innerHTML='<div><strong>'+s[0]+'</strong><small>'+s[1]+'</small></div><div class="price"><b>'+s[2]+'</b>'+(s[3]?'<em>'+s[3]+'</em>':'')+'</div>';
+  stores.appendChild(div);
+ });
+ document.getElementById('bestStoreName').textContent=p.stores[0][0];
+ document.getElementById('mapStore').textContent=p.stores[0][0];
+ document.getElementById('mapText').textContent='Best price for '+p.name+'. Distance '+p.stores[0][1].split('·')[0].trim()+'.';
+}
+async function startScanner(){
+ document.getElementById('fakeScan').style.display='none';
+ document.getElementById('reader').style.display='block';
+ if(!html5QrCode) html5QrCode=new Html5Qrcode("reader");
+ try{
+  await html5QrCode.start(
+   {facingMode:"environment"},
+   {fps:10, qrbox:{width:230,height:160}},
+   decodedText=>{
+    document.getElementById('barcodeInput').value=decodedText;
+    stopScanner();
+    if(products[decodedText]) useBarcode(decodedText);
+    else alert('Scanned: '+decodedText+'\\nNot found in demo database.');
+   }
+  );
+ }catch(e){
+  alert('Camera scan needs HTTPS or localhost. Use manual barcode for this prototype.');
+  document.getElementById('fakeScan').style.display='block';
+  document.getElementById('reader').style.display='none';
+ }
+}
+function stopScanner(){
+ if(html5QrCode){
+  html5QrCode.stop().catch(()=>{}).then(()=>{
+   document.getElementById('fakeScan').style.display='block';
+   document.getElementById('reader').style.display='none';
+  });
+ }
+}
+function openMaps(){
+ const store=(products[currentProduct]||products['8000500037560']).stores[0][0];
+ window.open('https://www.google.com/maps/search/'+encodeURIComponent(store+' Lebanon'),'_blank');
+}
+renderProduct();
+</script>
+</body>
+</html>
