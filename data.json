@@ -8188,6 +8188,65 @@
           "source": "online"
         }
       ]
+    },
+    {
+      "id": 141,
+      "barcode": "5289000000001",
+      "name": "Age Restricted Product Example",
+      "nameAr": "منتج مقيّد بالعمر",
+      "category": "Age Restricted",
+      "imageLetter": "18+",
+      "prices": [
+        {
+          "storeId": "carrefour_hazmieh",
+          "price": 18.0,
+          "updated": "demo",
+          "source": "age-restricted placeholder"
+        },
+        {
+          "storeId": "carrefour_citycentre",
+          "price": 19.8,
+          "updated": "demo",
+          "source": "age-restricted placeholder"
+        },
+        {
+          "storeId": "spinneys_jnah",
+          "price": 19.8,
+          "updated": "demo",
+          "source": "age-restricted placeholder"
+        },
+        {
+          "storeId": "spinneys_ashrafieh",
+          "price": 19.8,
+          "updated": "demo",
+          "source": "age-restricted placeholder"
+        },
+        {
+          "storeId": "le_charcutier_dbayeh",
+          "price": 19.8,
+          "updated": "demo",
+          "source": "age-restricted placeholder"
+        },
+        {
+          "storeId": "coop_beirut",
+          "price": 19.8,
+          "updated": "demo",
+          "source": "age-restricted placeholder"
+        },
+        {
+          "storeId": "grabgo_achrafieh",
+          "price": 19.8,
+          "updated": "demo",
+          "source": "age-restricted placeholder"
+        },
+        {
+          "storeId": "online_lb",
+          "price": 19.8,
+          "updated": "demo",
+          "source": "age-restricted placeholder"
+        }
+      ],
+      "ageRestricted": true
     }
   ]
 }
